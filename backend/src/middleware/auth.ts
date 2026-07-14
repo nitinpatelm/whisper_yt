@@ -23,7 +23,8 @@ export const protectRoute = [
       next();
     } catch (error) {
       console.error("Error fetching user or in protected route", error);
-      return res.status(500).json({ message: "Internal server error" });
+      res.status(500);
+      next(error);
     }
   },
 ];
