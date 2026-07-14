@@ -5,6 +5,10 @@
       "ESNext",
       "DOM"
     ],
+    "types": [
+      "bun",
+      "node"
+    ],
     "target": "ESNext",
     "module": "Preserve",
     "moduleDetection": "force",
